@@ -71,6 +71,11 @@ int main() {
         if (num == 5) break;
         num++;
     }
-    cout << num << endl;
+    num = 0;
+    while (num < 10) {
+        num++;
+        if (num == 5) continue;
+        cout << num;
+    }
     return 0;
 }
