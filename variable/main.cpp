@@ -37,5 +37,40 @@ int main() {
     sum=0;     // define sum variable sum = x + y * z;       // calculation cout << "x+y*z = "<< sum << endl;     // output return 0;
     sum = x + y * z;
     cout << "x+y*z = "<< sum << endl;
+    if (x > y) {
+      cout << "x is greater than y." << endl;
+    }
+    else {
+        cout << "y is greater than x." << endl;
+    }
+    int number = 20;
+    switch(number) {
+        case 10: cout <<"Running case 10\n"; break;
+        case 20: cout <<"Running case 20\n"; break;
+        case 30: cout <<"Running case 30\n"; break;
+        default: cout <<"Running case default\n"; break;
+    }
+    for (x = 0; x <=5; x++){
+        cout << x;
+    }
+    cout << endl;
+    int counter = 0;
+    while (counter < 8) {
+        cout <<"&";
+        counter++;
+    }
+    cout << endl;
+    counter = 0;
+    do {
+        cout << "@";
+        counter++;
+    } while (counter < 8);
+    cout << endl;
+    int num = 0;
+    while (num < 10) {
+        if (num == 5) break;
+        num++;
+    }
+    cout << num << endl;
     return 0;
 }
