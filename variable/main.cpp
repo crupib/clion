@@ -1,6 +1,15 @@
 #include <iostream>
 #include <string>
 using namespace std;
+int myFunction(int arg) {
+    return ++arg;
+}
+int function1(int num) {
+    return (num * 50);
+}
+void function2(int num){
+    cout << "The result is " << function1(num);
+}
 int main() {
     char c ='C';
     string s = "hello";
@@ -75,7 +84,43 @@ int main() {
     while (num < 10) {
         num++;
         if (num == 5) continue;
-        cout << num;
+        if (num == 10) continue;
+        cout << " " <<num;
     }
+
+    cout << endl;
+
+    bool xx = false; bool yy = true;
+//    Testing c++ comment
+    if (xx) {
+        cout << xx << endl;
+    }
+    if (yy) {
+        cout << yy << endl;
+    }
+    x = 100;
+    y = 200;
+    string result = (x<y)? "apple" : "banana";
+    cout << result << endl;
+    sum=0;
+    for (int n=1;n<=100;n++)
+        sum +=n;
+    cout << "Sum = "<<sum << endl;
+    string color[3];
+    color[0] = "Red ";
+    color[1] = "Yellow ";
+    color[2] = "Green ";
+    cout << color[0] << color[1] << color[2] << endl;
+    int arr[] = { 1,2,3,4,5,6};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    cout << "The size of the array is: " << size << endl;
+    int value = arr[2];
+    cout << value << endl;
+    int num_array[5] = {10,20,30,40,50};
+    num_array[3] = 800;
+    cout << num_array[3] << endl;
+    cout << "The number is "<< myFunction(10) << endl;
+    int number_2 = 2;
+    function2(number_2);
     return 0;
 }
