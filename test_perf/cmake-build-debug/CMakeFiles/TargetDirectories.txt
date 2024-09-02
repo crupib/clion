@@ -1,0 +1,3 @@
+C:/Users/crupi/source/clion/test_perf/cmake-build-debug/CMakeFiles/test_perf.dir
+C:/Users/crupi/source/clion/test_perf/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/crupi/source/clion/test_perf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
